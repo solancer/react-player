@@ -133,6 +133,26 @@ To seek to a certain part of the media, there is a `seekTo(fraction)` instance m
 * Wistia videos use the [Wistia Player API](https://wistia.com/doc/player-api)
 * [Supported file types](https://github.com/CookPete/react-player/blob/master/src/players/FilePlayer.js#L5-L6) are playing using [`<video>`](https://developer.mozilla.org/en/docs/Web/HTML/Element/video) or [`<audio>`](https://developer.mozilla.org/en/docs/Web/HTML/Element/audio) elements
 
+### Multiple Sources
+
+When playing file paths, an array of sources can be passed to the `url` prop to render multiple `<source>` tags.
+
+```js
+<ReactPlayer playing url={['foo.webm', 'foo.ogg']} />
+```
+
+You can also specify a `type` for each source by using objects with `src` and `type` properties.
+
+```js
+<ReactPlayer
+  playing
+  url={[
+    {src: 'foo.webm', type: 'video/webm'},
+    {src: 'foo.ogg', type: 'video/ogg'}
+  ]}
+/>
+```
+
 ### Contributing
 
 See the [contribution guidelines](https://github.com/CookPete/react-player/blob/master/CONTRIBUTING.md) before creating a pull request.
