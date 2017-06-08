@@ -100,7 +100,7 @@
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
-      "/dist/*"
+      
     ]
   }
 }
