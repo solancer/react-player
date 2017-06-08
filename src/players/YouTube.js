@@ -140,13 +140,11 @@ export default class YouTube extends Base {
   }
   render () {
     const style = {
-      width: '100%',
-      height: '100%',
       display: this.props.url ? 'block' : 'none'
     }
     return (
       <div style={style}>
-        <div ref={this.ref} />
+        <div style = {this.props.ystyle} ref={this.ref} />
       </div>
     )
   }

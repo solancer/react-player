@@ -112,6 +112,13 @@ export default class App extends Component {
               soundcloudConfig={soundcloudConfig}
               vimeoConfig={vimeoConfig}
               youtubeConfig={youtubeConfig}
+              ystyle = {{
+                border: 'red solid 4px',
+                width: 500,
+                height: 300,
+                position: 'absolute'
+
+              }}
               fileConfig={fileConfig}
               onReady={() => console.log('onReady')}
               onStart={() => console.log('onStart')}
